@@ -3,11 +3,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-  res.json({ users: 'OSCAR' })
-})
-
-app.get('/laptop', (req, res) => {
-  res.json({ hello: 'OSCAR MARIO ARRIETA PINEDA' })
+  res.json({ name: 'World' })
 })
 
 app.get('/users/:id', (req, res) => {
